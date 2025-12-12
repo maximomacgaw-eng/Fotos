@@ -114,8 +114,22 @@ console.log(colores);
 colores.unshift('yellow');////Añado yellow al principio
 console.log(colores);
 
+let presupuesto=9000;
+if (presupuesto<9500) //Aqui, si el presupuesto es menor a 9500, se imprime eso.
+{
+    console.log("estas pobre maestro!");
+
+}
+else if(presupuesto>8000) //El else if es cuando la condicion dentro del if no es verdadera, y actua como un else pero con condicion.
+{
+    console.log('estamos bien che!');
+}
+else
+{
+    console.log("andas bien che"); //Si no es menor, (else), se imprime eso. si se cumple el else if este no actua.
 
 
-
+}
+//NOS QUEDAMOS EN SWITCH
 
 
