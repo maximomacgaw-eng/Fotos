@@ -132,4 +132,79 @@ else
 }
 //NOS QUEDAMOS EN SWITCH
 
+let edad=20;
+switch(edad)
+{
+    case 10:
+        console.log("Que joven que sos!");
+        break;
+    case 20: 
+        console.log("hay que agarrar la pala pibe");
+        break;
+    default: console.log("Cuantos años tenes?");    //esto es como en c++.
+
+}
+let name="MAXIMO";
+switch(name)
+{
+    case 'maximo':
+        console.log("Buen nombre");
+        break;
+    case 'MAXIMO':
+        console.log('Buen nombre!');
+        break;
+}
+switch(20)
+{
+    case 10 + 5:
+        console.log("el resultado es 15"); //Tambien se pueden switchear operaciones.
+        break;
+    case 10 + 10:
+        console.log("el resultado es 20");
+        break;    
+}
+// EJ. 5:
+/* A primary school is giving different rewards based on the student's grade:
+
+Students that got an A will get a Chocolate
+
+Students that got a B will get a Cookie
+
+Students that got a C will get a Candy
+
+For any other value, print "No reward to give."
+
+Create a variable named grade that will store the student's grade.*/
+let nota = "B";
+switch(nota)
+{
+    case 'a': // Se pone doble case para que la letra pueda ser minuscula o mayuscula
+    case 'A':
+        console.log('felicidades! su nota es una A! bien hecho.');
+        break;
+    case 'b':
+    case 'B':
+        console.log("Bien hecho, hay que mejorar.");
+        break;
+    
+    case 'c':
+    case 'C':
+        console.log("Hay querecuperar.");
+        break;
+        
+     default: console.log("Intente nuevamente, la nota no ha sido cargada correctamente.");   
+
+}
+for (let x=0;x<10;x=x+1)
+{
+    console.log(x);
+}
+let i= 0;
+
+while(i<6)
+{
+    console.log(`el valor de i es ${i}`);
+    i++;
+
+}
 
