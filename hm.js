@@ -208,3 +208,55 @@ while(i<6)
 
 }
 
+/*
+Exercise #6
+Write a program that prints a half pyramid using asterisks * as shown below:
+
+*
+**
+***
+****
+*****
+*/
+/*for(i=0;i<6;i++)
+{
+    let linea="";
+    for(let j=1;j<=i;j++)
+    {
+        linea=linea + "*";
+    }
+    console.log(linea);
+} /*aca basicamente lo que se hace es: hago un for,
+  con i, para repetir la linea 5 veces. yo tengo que imprimir la misma cantidad de asteriscos que el numero de la linea
+entonces, hago otro for que imprima un asterisco hasta que la variable j sea igual a i, es decir, al numero de la linea. a la variable linea le voy sumando
+un asterisco.*/
+
+//AHORA AL REVES)
+for(i=5;i>=0;i--)
+{
+      let linea="";
+    for(j=0;j<=i;j++) 
+  
+    {
+    linea=linea+"*";
+    } 
+    console.log(linea);  //aqui es lo mismo, basicamente j agrega un * cada vez que j sea menor o igual a i. como i empieza de 5, j imprimira
+    //hasta 5. asi sucesivamente.
+}
+function maxi() //Creo una "funcion" que imprima hola mundo
+{
+    console.log("hola mundoo");
+}
+maxi(); //Una vez creada, debo "llamarla", para que finalmente se imprima el hola mundo o lo que hace la funcion.
+function max(nombre,clima) //Ahora creo la funcion que este en funcion de la variable nombre y clima (sin declarar como let, etc.) al llamarla, tengo que especificar el valor de la variable nombre y clima.
+{
+    console.log(`buenos dias ${nombre}! hoy está ${clima}`);
+}
+max("Maxi","lluvioso");
+
+//TAMBIEN SE PUEDE:
+function mux(nombre = "maxi",clima="soleado")
+{
+    console.log(`buenos dias ${nombre}! hoy está ${clima}`);  
+}
+mux();
