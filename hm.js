@@ -255,8 +255,46 @@ function max(nombre,clima) //Ahora creo la funcion que este en funcion de la var
 max("Maxi","lluvioso");
 
 //TAMBIEN SE PUEDE:
-function mux(nombre = "maxi",clima="soleado")
+function mux(nombre = "maxi",clima)
 {
     console.log(`buenos dias ${nombre}! hoy está ${clima}`);  
 }
-mux();
+mux(undefined,"soleado"); //Se pasa como undefined en el primer lugar que es el de nombre, ya que lo especificamos antes. y luego ponemos lo que queremos en el segundo lugar que es el de clima.
+//o si pongo null:
+mux(null,"soleadisimo!"); //Null es como dejar a proposito el lugar "vacio", mientras que undefined pone lo default.
+function suma(a,b)
+{
+    return a+b;// cuando llame a la funcion, me va a devolver la suma entre a y b.
+}
+let resultado= suma(4,6);//pongo que resultado sea la funcion suma con a=4 y b=6.
+console.log(resultado);
+
+function edadparaconducir(edad)
+{
+    if(edad<18)
+    {
+        return "sos muy joven para tener una licencia de conducir!"; //IMPORTANTE: LO QUE ESTA DETRAS DEL RETURN SE IGNORA
+    }
+    return "saca la licencia maestro!";
+}
+console.log(edadparaconducir(16));
+console.log(edadparaconducir(20));
+function print()
+{
+    console.log("Lindo dia!");
+    return;
+    console.log("Gran dia!");
+
+}
+print(); //Aqui se imprime el lindo dia, el gran dia se ignora.
+
+let myString = "Hello World!";
+
+function greet() {
+  let myString = "Morning!";
+  console.log(myString);
+}
+
+greet();  // Morning!//Esto se da porque en la funcion esta definida LOCALMETNE. entonces, desde afuera no podría acceder a este valor porque se accede unicamente a variables globales.
+console.log(myString); // Hello World! //Esto se da porque mystring esta definida globalmente, y desde afuera de la funcion accedo unicamente a variables GLOBALES.
+//NOS QUEDAMOS EN REST PARAMETER
