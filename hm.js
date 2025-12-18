@@ -298,3 +298,29 @@ function greet() {
 greet();  // Morning!//Esto se da porque en la funcion esta definida LOCALMETNE. entonces, desde afuera no podría acceder a este valor porque se accede unicamente a variables globales.
 console.log(myString); // Hello World! //Esto se da porque mystring esta definida globalmente, y desde afuera de la funcion accedo unicamente a variables GLOBALES.
 //NOS QUEDAMOS EN REST PARAMETER
+function rest(...messi)
+{
+    console.log(messi);
+}
+rest("a","b","c","d"); // el rest parameter (...) es un dato que almacena cuantos datos yo quiera en forma de array.
+// FUNCION "arrow" o "flecha":
+const pepe=(a,b,c)=>{
+console.log(a,b,c);  //Esta forma de escribir la funcion pepe supuestamete es mas facil.
+}
+pepe("maxi","pepe","juan");
+const sumita = (num) => num + 2;//esta forma es mas facil de escribir, sin poner el return,{}, etc.
+const greetings = () => console.log("Hello World!");//Puede hacerse de esta manera si necesito una sola linea
+const pepeeto = () => {
+  console.log("Hello World!");
+  console.log("How are you?");    
+}//si necesito mas de una linea debo poner llaves.
+
+//EJERCICIO 7.
+function areacuadrado(lado)
+{
+let area= lado*lado;
+let perimetro= 4*lado;
+    console.log(`el area es ${area}`);
+    console.log(`el perimetro es ${perimetro}`);
+}
+areacuadrado(2);
